@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data Monitoring</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sensor Data Monitoring</h2>
+    <p>Terakhir diperbarui: <strong id="latest_time">Fetching...</strong></p>
+
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Turbidity</td>
+            <td id="turbidity">Loading...</td>
+        </tr>
+        <tr>
+            <td>pH Level</td>
+            <td id="ph">Loading...</td>
+        </tr>
+        <tr>
+            <td>Dissolved Oxygen (DO)</td>
+            <td id="do">Loading...</td>
+        </tr>
+    </table>
+
+    <script>
+        function fetchData() {
+            $.ajax({
+                url: "get_update_data.php",
+                method: "GET",
+                dataType: "json",
+                success: function (data) {
+                    if (data.error) {
+                        $("#turbidity").text("No data");
+                        $("#ph").text("No data");
+                        $("#do").text("No data");
+                        $("#latest_time").text("No data");
+                    } else {
+                        $("#turbidity").text(data.turbidity);
+                        $("#ph").text(data.ph);
+                        $("#do").text(data.do);
+                        $("#latest_time").text(data.waktu);
+                    }
+                },
+                error: function () {
+                    console.error("Failed to fetch data.");
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            fetchData(); // Initial fetch
+            setInterval(fetchData, 5000); // Fetch every 5 seconds
+        });
+    </script>
+
+</body>
+</html>
