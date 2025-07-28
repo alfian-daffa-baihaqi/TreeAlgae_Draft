@@ -50,7 +50,6 @@
             top:-10px;
             width:70px;
             height:70px;
-            background-color: darkolivegreen;
             border-radius:50px;
             align-items: center;
             justify-content: center;
@@ -65,139 +64,134 @@
         margin-top: 20px;
         margin-bottom: -40px;
         }
+        .weather-card {
+            width: 120px;
+            padding: 10px;
+            background-color: #C1E967;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            font-size: 14px;
+        }
+
+        .weather-card img {
+            width: 40px;
+            height: 40px;
+        }   
     </style>
 </head>
 <body>
     <div class="rectangle2" style="position: relative; height: 1600px; flex-direction: column; background-color: white; gap: 50px;">
         <div class="rectangle" style="width: 300px; position:relative; justify-content: center; background-color: white; box-shadow: 0px 0px 10px gray;">
             <img src="logo_ugm.png" alt="Logo UGM" style="width:50px;height:auto; padding:10px;">
-            <img src="logo_ugm.png" alt="Logo UGM" style="width:50px;height:auto; padding:10px;">
-            <img src="logo_ugm.png" alt="Logo UGM" style="width:50px;height:auto; padding:10px;">
+            <img src="logo_algaepark.png" alt="Logo AlgaePark" style="width:50px;height:auto; padding:10px;">
+            <img src="logo_dteti.jpg" alt="Logo DTETI" style="width:75px;height:auto; padding:10px;">
         </div>
 
-        <div class="rectangle2" style="text-align: justify;">
-            <h1 style="padding: 30px; height: 10px; float: left; font-size: px; color:darkolivegreen; text-shadow: 1px 1px 2px gray;">Tree Algae</h1>
+        <!-- <div class="rectangle2" style="text-align: justify; background-color: #C1E967;">
+            <h1 style="padding: 30px; height: 10px; float: left; font-size: 40px; text-shadow: 1px 1px 2px gray;">Tree Algae</h1>
             <p style="font-size: 20px; font-weight: 400; padding: 20px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula in augue vitae euismod. Sed posuere sem ac enim vehicula, sed tristique mauris varius. Proin nec ultrices odio. Vestibulum gravida hendrerit velit quis tempus. Nulla velit sem, sollicitudin sit amet tincidunt nec, eleifend quis mauris. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula in augue vitae euismod. Sed posuere sem ac enim vehicula, sed tristique mauris varius. Proin nec ultrices odio. Vestibulum gravida hendrerit velit quis tempus. Nulla velit sem, sollicitudin sit amet tincidunt nec, eleifend quis mauris. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula in augue vitae euismod. Sed posuere sem ac enim vehicula, sed tristique mauris varius. Proin nec ultrices odio. Vestibulum gravida hendrerit velit quis tempus. Nulla velit sem, sollicitudin sit amet tincidunt nec, eleifend quis mauris. 
+                    Dashboard Tree Algae menghadirkan pengalaman memantau kondisi air secara real‑time sambil menjelajahi perbandingan penyerapan CO₂ dan produksi O₂ yang dihasilkan alga. Dirancang dengan meteran dinamis, tampil atraktif dan mudah dipahami. Antarmuka yang intuitif ini tidak hanya informatif, tetapi juga memberikan sensasi interaksi langsung dengan data sensor kualitas air, mulai dari tingkat kekeruhan air, pH, kandungan oksigen terlarut, hingga suhu dan konsentrasi karbon dioksida.
+            </p>
+        </div> tree algae di samping-->
+
+        <div class="rectangle2" style="text-align: justify; background-color: #C1E967; flex-direction: column;box-shadow: 0px 0px 10px #93B34B;">
+            <h1 style="text-align: center; padding-top: 20px; height: 10px; font-size: 40px; text-shadow: 1px 1px 2px gray;">Tree Algae</h1>
+            <p style="font-size: 20px; font-weight: 400; padding: 20px;">
+                    Dashboard Tree Algae menghadirkan pengalaman memantau kondisi air secara real‑time sambil menjelajahi perbandingan penyerapan CO₂ dan produksi O₂ yang dihasilkan alga. Dirancang dengan meteran dinamis, tampil atraktif dan mudah dipahami. Antarmuka yang intuitif ini tidak hanya informatif, tetapi juga memberikan sensasi interaksi langsung dengan data sensor kualitas air, mulai dari tingkat kekeruhan air, pH, kandungan oksigen terlarut, hingga suhu dan konsentrasi karbon dioksida.
             </p>
         </div>
         
         <div class="rectangle" style="position: relative; flex-direction: column; background-color: white;">
-            <div class="rectangle" style="position: relative; height: 350px; flex-direction: row; background-color: white;">
-                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: mediumseagreen;border-width:5px;border-style: solid; justify-content: center; flex-direction: column;">
-                    <div class="rectangle" style="width: 170px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px gray; text-align: left; padding-left:80px;">
-                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px gray; justify-content: center; align-items: center;">
-                            <img src="turbidity.svg" alt="Turbidity" style="width:50px;height:auto; padding:10px;">
+            <div class="rectangle" style="position: relative; height: 350px; flex-direction: row; background-color: white; gap:60px;">
+                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: #72B01E;border-width:5px;border-style: solid; justify-content: center; flex-direction: column; box-shadow: 0px 0px 10px #669429;">
+                    <div class="rectangle" style="background-color: #C1E967;width: 255px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px #93B34B; text-align: left; padding-left:50px;">
+                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px #669429; justify-content: center; align-items: center; background-color: #8AC73B;">
+                            <img src="turbidity new.svg" alt="Turbidity" style="width:50px;height:auto; padding:10px;">
                         </div>
                         <p style="font-size: 20px; font-weight: 700;">Turbidity (NTU)</p>
                     </div>
                     <div id="gauge1" style="width:200px; height:160px;"></div>
                     <p style="padding-left: 10px; padding-right: 10px; text-align: justify; font-size: 15px;">
-                        Kejernihan suatu cairan, terutama air, yang dipengaruhi oleh partikel-partikel tersuspensi yang menghamburkan dan menyerap cahaya.
+                        Kejernihan cairan yang dipengaruhi partikel tersuspensi.
                     </p>
                 </div>
 
-                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: darkolivegreen;border-width:5px;border-style: solid; justify-content: center; flex-direction: column;">
-                    <div class="rectangle" style="width: 110px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px gray; text-align: left; padding-left:80px;">
-                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px gray; justify-content: center; align-items: center; background-color: mediumseagreen;">
-                            <img src="pH.svg" alt="pH" style="width:50px;height:auto; padding:10px;">
+                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: #72B01E;border-width:5px;border-style: solid; justify-content: center; flex-direction: column; box-shadow: 0px 0px 10px #598918;">
+                    <div class="rectangle" style="background-color: #C1E967;width: 255px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px #93B34B; text-align: left; padding-left:50px;">
+                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px #669429; justify-content: center; align-items: center; background-color: #8AC73B;">
+                            <img src="pH new.svg" alt="pH" style="width:50px;height:auto; padding:10px;">
                         </div>
                         <p style="font-size: 20px; font-weight: 700;">pH Scale</p>
                     </div>
                     <div id="gauge2" style="width:200px; height:160px;"></div>
                     <p style="padding-left: 10px; padding-right: 10px; text-align: justify; font-size: 15px;">
-                        Tingkat keasaman atau kebasaan suatu zat, dalam hal ini air. pH 7 bersifat netral, pH kurang dari 7 bersifat asam, dan pH lebih dari 7 bersifat basa atau alkali.
+                        Tingkat keasaman atau kebasaan suatu zat, dalam hal ini air.
                     </p>
                 </div>
-                
-                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: mediumseagreen;border-width:5px;border-style: solid; justify-content: center; flex-direction: column;">
-                    <div class="rectangle" style="width: 250px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px gray; text-align: left; padding-left:80px;">
-                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px gray; justify-content: center; align-items: center;">
-                            <img src="dissolved oxygen.svg" alt="Dissolved Oxygen" style="width:50px;height:auto; padding:10px;">
-                        </div>
-                        <p style="font-size: 20px; font-weight: 700;">Dissolved Oxygen (mg/L)</p>
-                    </div>
-                    <div id="gauge3" style="width:200px; height:160px;"></div>
-                    <p style="padding-left: 10px; padding-right: 10px; text-align: justify; font-size: 15px;">
-                        Oksigen terlarut dalam air yang digunakan dalam proses metabolisme alga. Maka, semakin besar ukuran ini, semakin baik pula kualitas airnya.
-                    </p>
-                </div>
-            </div>
 
-            <div class="rectangle" style="position: relative; height: 300px; flex-direction: row; background-color: white; width: 700px;">
-                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: darkolivegreen;border-width:5px;border-style: solid; justify-content: center; flex-direction: column;">
-                    <div class="rectangle" style="width: 250px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px gray; text-align: left; padding-left:80px;">
-                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px gray; justify-content: center; align-items: center; background-color: mediumseagreen;">
-                            <img src="water temp.svg" alt="Water Temperature" style="width:50px;height:auto; padding:10px;">
+                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: #72B01E;border-width:5px;border-style: solid; justify-content: center; flex-direction: column; box-shadow: 0px 0px 10px #598918;">
+                    <div class="rectangle" style="background-color: #C1E967;width: 235px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px #93B34B; text-align: left; padding-left:70px;">
+                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px #669429; justify-content: center; align-items: center; background-color: #8AC73B;">
+                            <img src="water temp new.svg" alt="Water Temperature" style="width:50px;height:auto; padding:10px;">
                         </div>
                         <p style="font-size: 20px; font-weight: 700;">Water Temperature (°C)</p>
                     </div>
-                    <div id="gauge4" style="width:200px; height:160px;"></div>
+                    <div id="gauge3" style="width:200px; height:160px;"></div>
                     <p style="padding-left: 10px; padding-right: 10px; text-align: justify; font-size: 15px;">
-                        Suhu air yang memengaruhi pertumbuhan alga. Umumnya, jangkauan suhu yang optimal terletak pada 15–27°C.
+                        Suhu air yang memengaruhi pertumbuhan alga.
                     </p>
                 </div>
 
-                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: mediumseagreen;border-width:5px;border-style: solid; justify-content: center; flex-direction: column;">
-                    <div class="rectangle" style="width: 230px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px gray; text-align: left; padding-left:80px;">
-                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px gray; justify-content: center; align-items: center;">
-                            <img src="co2.svg" alt="Carbon Dioxide" style="width:50px;height:auto; padding:10px;">
+            </div>
+
+            <div class="rectangle" style="position: relative; height: 300px; flex-direction: row; background-color: white; width: 700px;">
+                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: #8AC73B;border-width:5px;border-style: solid; justify-content: center; flex-direction: column; box-shadow: 0px 0px 10px #669429;">
+                    <div class="rectangle" style="background-color: #C1E967;width: 235px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px #93B34B; text-align: left; padding-left:70px;">
+                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px #598918; justify-content: center; align-items: center; background-color: #72B01E;">
+                            <img src="dissolved oxygen new.svg" alt="Dissolved Oxygen" style="width:50px;height:auto; padding:10px;">
+                        </div>
+                        <p style="font-size: 20px; font-weight: 700;">Dissolved Oxygen (mg/L)</p>
+                    </div>
+                    <div id="gauge4" style="width:200px; height:160px;"></div>
+                    <p style="padding-left: 10px; padding-right: 10px; text-align: justify; font-size: 15px;">
+                        Oksigen terlarut dalam air untuk proses metabolisme alga.
+                    </p>
+                </div>
+
+                <img src="algae 2.svg" alt="algae illustration 2" style="position:absolute;bottom:-40px;right:-160px;">
+                <div class="rectangle" style="width: 250px; position: relative; background-color:white; border-radius:10px; border-color: #8AC73B;border-width:5px;border-style: solid; justify-content: center; flex-direction: column; box-shadow: 0px 0px 10px #669429;">
+                    <div class="rectangle" style="background-color: #C1E967;width: 235px; height: 50px; position: absolute; left:-40px; top:-30px; box-shadow: 5px 5px 5px #93B34B; text-align: left; padding-left:70px;">
+                        <div class="circle" style="left: 0px; box-shadow: 5px 0px 5px #598918; justify-content: center; align-items: center; background-color: #72B01E;">
+                            <img src="co2 new.svg" alt="Carbon Dioxide" style="width:50px;height:auto; padding:10px;">
                         </div>
                         <p style="font-size: 20px; font-weight: 700;">Carbon Dioxide (ppm)</p>
                     </div>
                     <div id="gauge5" style="width:200px; height:160px;"></div>
                     <p style="padding-left: 10px; padding-right: 10px; text-align: justify; font-size: 15px;">
-                        Konsentrasi atau proporsi gas CO₂ yang terdapat dalam suatu volume udara atau media tertentu, dalam konteks ini adalah air.
+                        Konsentrasi atau proporsi gas CO₂ yang terdapat dalam air.
                     </p>
                 </div>
             </div>
         </div>
-
-        <div class="rectangle" style="position: relative;">
-                weather dan terakhir diperbarui
+        <br>
+        <div class="rectangle" style="width: 850px; position: relative; flex-direction: column; background-color: white; border-radius:30px; border-color: olivedrab;border-width:5px;border-style: solid; box-shadow: 0px 0px 10px gray; padding:20px;">
+                    <h2 style="font-size: 30px; margin: 10px; margin-bottom:0px;">Prediksi Cuaca Satu Minggu<br>Yogyakarta</h2>
+                    <p style="font-size: 20px;">Terakhir diperbarui: <br> <id='date-info'>Fetching...</id></p>
+                    <div id="weather-forecast" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;"></div>
         </div>
 
-    </div>
-    
-        <!-- <h2>Sensor Data Monitoring</h2>
-        <p>Terakhir diperbarui: <strong id='date-info'>Fetching...</strong></p> -->
+        <span id="turbidity" style="color: white;">1</span> 
+        <span id="ph" style="color: white;">1</span> 
+        <span id="do" style="color: white;">1</span> 
+        <span id="co2" style="color: white;">1</span> 
+        <span id="water_temp" style="color: white;">1</span> 
+        <!-- maaf jujur ini bingung kalo diapus gaugenya langsung ilang semua -->
 
-        <!-- <table>
-            <tr>
-                <th>Parameter</th>
-                <th>Value</th>
-            </tr>
-            <tr>
-                <td>Turbidity (NTU)</td>
-                <td id="turbidity"></td>
-            </tr>
-            <tr>
-                <td>pH Level</td>
-                <td id="ph"></td>
-            </tr>
-            <tr>
-                <td>Dissolved Oxygen (DO) (mg/L)</td>
-                <td id="do">Loading...</td>
-            </tr>
-            <tr>
-                <td>CO₂ (ppm)</td>
-                <td id="co2">Loading...</td>
-            </tr>
-            <tr>
-                <td>Water Temperature (°C)</td>
-                <td id="water_temp">Loading...</td>
-            </tr>
-            <tr>
-                <td>Air Temperature (°C)</td>
-                <td id="air_temp">Loading...</td>
-            </tr>
-            <tr>
-                <td>Air Humidity (%)</td>
-                <td id="air_hum">Loading...</td>
-            </tr>
-        </table> -->
+        <img src="algae 1.svg" alt="algae illustration" style="position:absolute;bottom:-150px;left:50%; transform: translateX(-50%);">
+        <img src="bubble_top.svg" alt="bubble illustration" style="position:absolute;top:-10px;left:50%; transform: translateX(-50%);">
+        <img src="bubble_bot.svg" alt="bubble illustration 2" style="position:absolute;bottom:450px;left:-25px;">
+    </div>
 
     <script>
         function fetchData() {
@@ -207,22 +201,18 @@
                 dataType: "json",
                 success: function (data) {
                     if (data.error) {
-                        $("#turbidity").text("No data");
-                        $("#ph").text("No data");
-                        $("#do").text("No data");
-                        $("#co2").text("No data");
-                        $("#water_temp").text("No data");
-                        $("#air_temp").text("No data");
-                        $("#air_hum").text("No data");
+                        g1.refresh(0);
+                        g2.refresh(0);
+                        g3.refresh(0);
+                        g4.refresh(0);
+                        g5.refresh(0);
                         $("#latest_time").text("No data");
                     } else {
-                        $("#turbidity").text(data.turbidity + " NTU");
-                        $("#ph").text(data.ph);
-                        $("#do").text(data.do + " mg/L");
-                        $("#co2").text(data.co2 + " ppm");
-                        $("#water_temp").text(data.water_temp + " °C");
-                        $("#air_temp").text(data.air_temp + " °C");
-                        $("#air_hum").text(data.air_hum + " %");
+                        g1.refresh(data.turbidity);
+                        g2.refresh(data.ph);
+                        g3.refresh(data.do);
+                        g4.refresh(data.co2);
+                        g5.refresh(data.water_temp);
                         $("#latest_time").text(data.waktu);
                     }
                 },
@@ -235,7 +225,14 @@
         $(document).ready(function () {
             fetchData(); // Initial fetch
             setInterval(fetchData, 5000); // Fetch every 5 seconds
+            fetchWeather();
         });
+
+        const turbidityValue = parseFloat(document.getElementById("turbidity").textContent);
+        const phValue = parseFloat(document.getElementById("ph").textContent);
+        const doValue = parseFloat(document.getElementById("do").textContent);
+        const co2Value = parseFloat(document.getElementById("co2").textContent);
+        const water_tempValue = parseFloat(document.getElementById("water_temp").textContent);
 
         const defaultGaugeConfig = {
         min: 0,
@@ -248,7 +245,7 @@
         const g1 = new JustGage({
         ...defaultGaugeConfig,
         id: "gauge1",
-        value: 85,
+        value: turbidityValue,
         title: "Turbidity",
         levelColors: ["#00ff00","#ffcc00","#ff0000"],
         decimals: 2,
@@ -258,7 +255,7 @@
         const g2 = new JustGage({
         ...defaultGaugeConfig,
         id: "gauge2",
-        value: 5.73,
+        value: phValue,
         title: "pH",
         min: 0,
         max: 14,
@@ -270,18 +267,7 @@
         const g3 = new JustGage({
         ...defaultGaugeConfig,
         id: "gauge3",
-        value: 6.43,
-        max: 10,
-        levelColors: ["#ff0000","#ffcc00","#00ff00"],
-        title: "Dissolved Oxygen",
-        decimals: 2,
-        formatNumber: false
-        });
-
-        const g4 = new JustGage({
-        ...defaultGaugeConfig,
-        id: "gauge4",
-        value: 47,
+        value: water_tempValue,
         min: 10,
         max: 50,
         levelColors: ["#ff0000","#ffcc00","#00ff00","#ffcc00","#ff0000"],
@@ -290,10 +276,21 @@
         formatNumber: false
         });
 
+        const g4 = new JustGage({
+        ...defaultGaugeConfig,
+        id: "gauge4",
+        value: doValue,
+        max: 10,
+        levelColors: ["#ff0000","#ffcc00","#00ff00"],
+        title: "Dissolved Oxygen",
+        decimals: 2,
+        formatNumber: false
+        });
+
         const g5 = new JustGage({
         ...defaultGaugeConfig,
         id: "gauge5",
-        value: 670.93,
+        value: co2Value,
         min: 400,
         max: 2000,
         levelColors: ["#00ff00","#ffcc00","#ff0000"],
@@ -302,11 +299,41 @@
         formatNumber: false
         });
 
-        function updateGauges() {
-            g1.refresh(Math.floor(Math.random() * 14));
-            g2.refresh(Math.floor(Math.random() * 14));
-        } 
-    </script>
+        function fetchWeather() {
+            const apiKey = 'b1e3e64b37e0f74617fd6f5171959c3b';
+            const city = 'Yogyakarta'; // Or another city
+            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const forecastContainer = document.getElementById('weather-forecast');
+                    forecastContainer.innerHTML = ''; // Clear previous data
+
+                    // Extract one forecast per day (every 8th record in 3-hour intervals)
+                    for (let i = 0; i < data.list.length; i += 8) {
+                        const day = data.list[i];
+                        const date = new Date(day.dt_txt);
+                        const icon = day.weather[0].icon;
+                        const temp = day.main.temp;
+                        const desc = day.weather[0].description;
+
+                        const card = document.createElement('div');
+                        card.className = 'weather-card';
+                        card.innerHTML = `
+                            <div><strong>${date.toLocaleDateString('en-US', { weekday: 'short' })}</strong></div>
+                            <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}">
+                            <div>${Math.round(temp)}°C</div>
+                            <div style="text-transform: capitalize;">${desc}</div>
+                        `;
+                        forecastContainer.appendChild(card);
+                    }
+                })
+                .catch(error => {
+                    console.error("Weather fetch error:", error);
+                });
+        }
+
+    </script>
 </body>
 </html>
