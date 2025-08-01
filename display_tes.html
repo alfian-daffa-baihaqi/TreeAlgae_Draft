@@ -88,13 +88,6 @@
             <img src="logo_dteti.jpg" alt="Logo DTETI" style="width:75px;height:auto; padding:10px;">
         </div>
 
-        <!-- <div class="rectangle2" style="text-align: justify; background-color: #C1E967;">
-            <h1 style="padding: 30px; height: 10px; float: left; font-size: 40px; text-shadow: 1px 1px 2px gray;">Tree Algae</h1>
-            <p style="font-size: 20px; font-weight: 400; padding: 20px;">
-                    Dashboard Tree Algae menghadirkan pengalaman memantau kondisi air secara real‑time sambil menjelajahi perbandingan penyerapan CO₂ dan produksi O₂ yang dihasilkan alga. Dirancang dengan meteran dinamis, tampil atraktif dan mudah dipahami. Antarmuka yang intuitif ini tidak hanya informatif, tetapi juga memberikan sensasi interaksi langsung dengan data sensor kualitas air, mulai dari tingkat kekeruhan air, pH, kandungan oksigen terlarut, hingga suhu dan konsentrasi karbon dioksida.
-            </p>
-        </div> tree algae di samping-->
-
         <div class="rectangle2" style="text-align: justify; background-color: #C1E967; flex-direction: column;box-shadow: 0px 0px 10px #93B34B;">
             <h1 style="text-align: center; padding-top: 20px; height: 10px; font-size: 40px; text-shadow: 1px 1px 2px gray;">Tree Algae</h1>
             <p style="font-size: 20px; font-weight: 400; padding: 20px;">
@@ -177,7 +170,11 @@
         <br>
         <div class="rectangle" style="width: 850px; position: relative; flex-direction: column; background-color: white; border-radius:30px; border-color: olivedrab;border-width:5px;border-style: solid; box-shadow: 0px 0px 10px gray; padding:20px;">
                     <h2 style="font-size: 30px; margin: 10px; margin-bottom:0px;">Prediksi Cuaca Satu Minggu<br>Yogyakarta</h2>
-                    <p style="font-size: 20px;">Terakhir diperbarui: <br> <id='date-info'>Fetching...</id></p>
+                    <p style="font-size: 20px;">
+                      Terakhir diperbarui: <br>
+                      <span id="latest_time">Fetching...</span>
+                    </p>
+                    <!--<p style="font-size: 20px;">Terakhir diperbarui: <br> <id='date-info'>Fetching...</id></p>-->
                     <div id="weather-forecast" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;"></div>
         </div>
 
@@ -191,13 +188,13 @@
         <img src="algae bot.svg" alt="algae illustration" style="position:absolute;bottom:-50px;left:50%; transform: translateX(-50%);">
         <img src="bubble top.svg" alt="bubble illustration" style="position:absolute;top:-10px;left:50%; transform: translateX(-50%);">
         <img src="bubble bot.svg" alt="bubble illustration 2" style="position:absolute;bottom:450px;left:-25px;">
-        <img src="bubble bot 2.svg" alt="bubble illustration 3" style="position:absolute;bottom:250px;right:-60px;">
+        <img src="bubble bot new.svg" alt="bubble illustration 3" style="position:absolute;bottom:250px;right:-60px;">
     </div>
 
     <script>
         function fetchData() {
             $.ajax({
-                url: "https://punyadaffa.my.id/treealgae/get_update_data.php",
+                url: "/public_api/get_update_data.php",
                 method: "GET",
                 dataType: "json",
                 success: function (data) {
